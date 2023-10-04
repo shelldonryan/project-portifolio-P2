@@ -169,6 +169,61 @@ section .header{
     font-weight: 600;
 }
 
+.technologies{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    'javascript html css'
+    'nodejs react express';
+
+    column-gap: 1rem;
+    row-gap: 2rem;
+
+    align-items: center;
+
+    margin-top: 4rem;
+}
+
+.technologie{
+    width: 100px;
+    background-color: #3a3636;
+    padding: 1rem;
+    justify-self: center;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.technologie:hover{
+    background-color: #1f1e1e;
+    border-color: #DB3427;
+}
+
+.technologie #JavaScript{
+    grid-area: javascript;
+}
+
+.technologie #html{
+    grid-area: html;
+}
+
+.technologie #css{
+    grid-area: css;
+}
+
+.technologie #Nodejs{
+    grid-area: nodejs;
+}
+
+.technologie #React{
+    grid-area: react;
+}
+
+.technologie #express{
+    grid-area: express;
+}
+
 .project{
     margin-top: 4rem;
     display: grid;
@@ -186,7 +241,7 @@ section .header{
 
 .project .card:hover{
     background-color: #1f1e1e;
-    border-color: #f3f3f2;
+    border-color: #DB3427;
 }
 
 .project .card h4{
@@ -243,10 +298,12 @@ section .header{
     grid-row: 1/2;
     width:400px;
     filter: blur(5px);
+    cursor: pointer;
     transition: all 0.2s linear;
 }
 .certificados .certificado:hover{
     width: 500px;
+    
     filter: blur(0px);
 }
 
@@ -269,8 +326,6 @@ section .header{
     margin: 5px auto 0;
     color: #fececa;
 }
-
-
 
 footer{
     display: flex;
