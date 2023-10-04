@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-* {
+*{
     padding: 0;
     margin: 0;
     border: 0;
@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-.light {
+.light{
     --text-color: #1b1818;
     --bg-color: #f3f3f2;
     --bg-btn-default: #ee5145;
@@ -17,21 +17,21 @@
     --color-text-btn: #1b1818;
 }
 
-img {
+img{
     width: 100%;
     display: flex;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-body {
+body{
     font-family: Poppins, 'Sans Serif';
     background: #1b1818;
 }
 
-nav {
+nav{
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
@@ -42,11 +42,11 @@ nav {
     gap: 2rem;
 }
 
-.avatar-profile {
+.avatar-profile{
     max-width: 112px;
 }
 
-.links-nav {
+.links-nav{
     list-style: none;
     display: flex;
     align-items: center;
@@ -55,7 +55,7 @@ nav {
 
 .link a{
     position: relative;
-    color: #f3f3f2;
+    color: #fececa;
     padding-bottom: 0.5rem;
 }
 
@@ -97,19 +97,19 @@ nav {
     color: #c22a1e;
 }
 
-.container {
+.container{
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
 }
 
-.blur {
+.blur{
     position: absolute;
     box-shadow: 0 0 1000px 50px #7F241D;
     z-index: -1;
 }
 
-header {
+header{
     position: relative;
     padding-top: 2rem;
     display: grid;
@@ -119,7 +119,7 @@ header {
     gap: 3rem;
 }
 
-header .content h1 {
+header .content h1{
     color: #c22a1e;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -142,7 +142,7 @@ header .image img{
     margin: auto;
 }
 
-header .image {
+header .image{
     position: relative;
 }
 
@@ -161,20 +161,142 @@ header .image::before{
     z-index: -1;
 }
 
+section .header{
+    margin-bottom: 1rem;
+    color: #c22a1e;
+    text-align: start;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.project{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.project .card{
+    background-color: #3a3636;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.project .card:hover{
+    background-color: #1f1e1e;
+    border-color: #f3f3f2;
+}
+
+.project .card h4{
+    margin-bottom: 8px;
+    color: #fececa;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project .card p{
+    margin: 16px auto 30px;
+    color: #fececa;
+}
+
+.project .card a{
+    color: #f3f3f2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card .languages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .languages span{
+    background-color: #ee5145;
+    color: #f3f3f2;
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card .languages span:hover{
+    background-color: #db3427;
+}
+
+.certificados{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.certificados .certificado{
+    align-items: center;
+    grid-row: 1/2;
+    width:400px;
+    filter: blur(5px);
+    transition: all 0.2s linear;
+}
+.certificados .certificado:hover{
+    width: 500px;
+    filter: blur(0px);
+}
+
+.certificados .certificado dl{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    grid-row: 2/3;
+}
+
+.certificados .certificado dt{
+    margin:1rem auto 8px;
+    color: #c22a1e;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.certificados .certificado dd{
+    margin: 5px auto 0;
+    color: #fececa;
+}
 
 
-footer #copyright {
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .avatar-profile-footer{
+    width: 200px;
+    position: relative;
+    transform: translateY(15%);
+}
+
+footer #copyright{
     text-align: center;
     color: #c2291e66;
     font-size: 16px;
 }
 
-footer #social-links {
+footer #social-links{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 0 2rem 2rem;
     gap: 1rem;
 }
 
@@ -183,7 +305,7 @@ footer #social-links a{
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    width: 80px;
+    width: 60px;
     
     border-radius: 50%;
     transition: all 0.4s ease;

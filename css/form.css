@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, 'Sans Serif';
+    background: #1b1818;
+}
+
+center h1{
+    color: #c22a1e;
+    margin:3rem auto 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+center h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #c22a1e;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #c22a1e;
+}
+
+#form fieldset input{
+    background-color: #3a3636;
+    color: #f3f3f2;
+    border-radius: 5px;
+    width: 300px;
+    height: 36px;
+
+    border: 0;
+    padding: 16px 12px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+#form fieldset input:focus{
+    outline: 2px solid #f3f3f2;
+    background-color: #1f1e1e;
+}
+
+#form fieldset textarea{
+    background-color: #3a3636;
+    color: #f3f3f2;
+    border-radius: 5px;
+
+    border: 0;
+    padding: 16px 12px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+#form fieldset textarea:focus{
+    outline: 2px solid #f3f3f2;
+    background-color: #1f1e1e;
+}
+
+.btn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 1rem;
+    font-size: 1.2rem;
+    color: #f3f3f2;
+    background-color: #ee5145;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background-color: #db3427;
+}
+
+.btn:active{
+    background-color: #c22a1e;
+}
+
+.btn:disabled{
+    background-color: #fececa;
+    color: #c22a1e;
+}
