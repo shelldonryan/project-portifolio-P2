@@ -359,6 +359,7 @@ footer{
 footer .avatar-profile-footer{
     width: 200px;
     position: relative;
+    z-index: -1;
     transform: translateY(15%);
 }
 
